@@ -25,8 +25,8 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-// mongoose.connect("mongodb+srv://Siddharth-Mishra:" + process.env.ATLAS_PASS + "@cluster0.d8bxs5u.mongodb.net/userDB");
-mongoose.connect('mongodb://localhost:27017/userDB');
+mongoose.connect("mongodb+srv://Siddharth-Mishra:" + process.env.ATLAS_PASS + "@cluster0.d8bxs5u.mongodb.net/userDB");
+// mongoose.connect('mongodb://localhost:27017/userDB');
 const userSchema = mongoose.Schema({
     email: String,
     password: String,
